@@ -15,7 +15,7 @@ FEATURES
 - Export to CSV Files
 
 REQUIRMENTS
-- PowerShell 3.0
+- PowerShell 3.0 - 5.1
 - Create a DS-Config.json in the same folder with the following content modified to fit your environment:
 
 {
@@ -26,7 +26,8 @@ REQUIRMENTS
     "PASSWORD": "",
     "REPORTNAME" : "DS_Events",
     "HOSTFILTERTYPE" : "0",
-    "TIMEFILTERTYPE" : "5"
+    "TIMEFILTERTYPE" : "5",
+    "REPORTTYPE" : "IPS" 
 }
 
 - For DSaaS, MANAGER should be "app.deepsecurity.trendmicro.com" and the PORT is "443".
@@ -39,3 +40,4 @@ REQUIRMENTS
     - 5 LAST 30 DAYS
     - 6 LAST 60 DAYS
     - 7 LAST 90 DAYS
+- REPORTTYPE can be any of the following values: SYS, AM, WEB, FW, IPS, IM, LI
